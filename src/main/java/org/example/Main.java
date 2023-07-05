@@ -1,5 +1,8 @@
 package org.example;
 
+import java.util.ArrayList;
+import java.util.List;
+
 public class Main {
     public static void main(String[] args) {
 
@@ -21,8 +24,23 @@ public class Main {
 
         BottleOfWater bottleOfWater1 = new BottleOfWater("Fortoon",  50, 2);
         System.out.println(bottleOfWater1.displayInfo());
-        System.out.println(product3.displayInfo());
-       System.out.println(product2.displayInfo());
+
+        Product bottleOfMilk1 = new BottleOfMilk("OOO", "Milk",  50, 2, 10);
+
+        Product CokaCola1 = new CokaCola("Cola", 60, 1, 150);
+        System.out.println(CokaCola1.displayInfo());
+
+        List<Product> products = new ArrayList<>();
+        products.add(bottleOfMilk1);
+        products.add(bottleOfWater1);
+        products.add(CokaCola1);
+
+        VendingMachin machin = new VendingMachin(products);
+
+
+
+
+
 
 
 

@@ -24,7 +24,6 @@ public class Main {
 
         BottleOfWater bottleOfWater1 = new BottleOfWater("Fortoon",  50, 2);
         System.out.println(bottleOfWater1.displayInfo());
-
         Product bottleOfMilk1 = new BottleOfMilk("OOO", "Milk",  50, 2, 10);
 
         Product CokaCola1 = new CokaCola("Cola", 60, 1, 150);
@@ -36,16 +35,5 @@ public class Main {
         products.add(CokaCola1);
 
         VendingMachin machin = new VendingMachin(products);
-
-
-
-
-
-
-
-
-
-
-
     }
 }
